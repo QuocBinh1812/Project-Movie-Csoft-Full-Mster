@@ -20,7 +20,7 @@ export default function News(props) {
   const [trailer, setTrailer] = useState();
 
   const renderFilm = () => {
-    return arrFilm.slice(0, 24).map((phim, index) => {
+    return arrFilm?.slice(0, 24).map((phim, index) => {
       return (
         <div className="wrapper col-12 col-md-4 col-lg-3" key={index}>
           <div className="card">
@@ -41,11 +41,12 @@ export default function News(props) {
               </h1>
               <div style={{ height: "100px" }}>
                 <p stle={{ height: "100px" }}>
-                  {phim.moTa.length > 100 ? (
+                  {phim?.moTa?.length > 100 ? (
                     <span>{phim.moTa.slice(0, 80)}... </span>
                   ) : (
                     <span>{phim.moTa} </span>
                   )}
+                  {/* <span>{phim?.moTa?.slice(0, 80)} </span> */}
                 </p>
               </div>
 

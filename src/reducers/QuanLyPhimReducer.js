@@ -71,16 +71,15 @@ export const QuanLyPhimReducer = (state = stateDefault, action) => {
       state.dangChieu = !state.dangChieu;
 
       state.arrFilm = state.arrFilmDefault.filter(
-        (film) => film.dangChieu === state.dangChieu
+        //(film) => film.dangChieu === state.dangChieu
+        (film) => film.sapChieu === false
       );
       return { ...state };
     }
 
     case SET_FILM_SAP_CHIEU: {
-      state.sapChieu = !state.sapChieu;
-
       state.arrFilm = state.arrFilmDefault.filter(
-        (film) => film.sapChieu === state.sapChieu
+        (film) => film.sapChieu === true
       );
       return { ...state };
     }

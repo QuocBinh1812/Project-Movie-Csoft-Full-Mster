@@ -21,7 +21,7 @@ export default function User(props) {
     (state) => state.QuanLyNguoiDungReducer
   );
   const dispatch = useDispatch();
-  // console.log('quanLyNguoiDung', quanLyNguoiDung);
+  console.log("quanLyNguoiDung", quanLyNguoiDung);
   useEffect(() => {
     dispatch(layDanhSachNguoiDungAction());
   }, []);

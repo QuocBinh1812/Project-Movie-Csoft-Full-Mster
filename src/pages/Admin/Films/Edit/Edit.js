@@ -97,13 +97,13 @@ const Edit = (props) => {
       let reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = (e) => {
-        // console.log(e.target.result);
+        console.log("file result", e.target.result);
         setImgSrc(e.target.result);
       };
 
       // console.log('file',file);
       //đếm dữ liệu file lưu vào formik
-      formik.setFieldValue("hinhAnh", file);
+      // formik.setFieldValue("hinhAnh", file);
     }
   };
 

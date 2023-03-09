@@ -15,7 +15,7 @@ export default function Home(props) {
   console.log("listFilm", arrFilm);
   const dispatch = useDispatch();
   // console.log('propsHome',props);
-  //  console.log({heThongRapChieu});
+  console.log("test interrator", heThongRapChieu);
 
   useEffect(() => {
     const action = layDanhSachPhimAction();

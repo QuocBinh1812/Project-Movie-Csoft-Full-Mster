@@ -130,7 +130,7 @@ const MultipleRowSlick = (props) => {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1124,
         settings: {
           className: "center ",
           centerMode: true,

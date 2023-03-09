@@ -29,7 +29,7 @@ function Checkout(props) {
     //dispatch function này
     dispatch(action);
 
-    //load danh sách ghế đang đặt từ serve về
+    //load danh sách ghế đang đặt từ server về
     //connection.on("loadDanhSachGheDaDat", (dsGheDangDat)=>{
     //console.log('danhSachGheKhachDat',dsGheDangDat);
     // })
@@ -51,17 +51,17 @@ function Checkout(props) {
       //kiểm tra từng render xem có phải ghế khách đặt hay không
       let classGheKhachDat = "";
       let indexGheKD = danhSachGheKhachDat.findIndex(
-        (gheKD) => gheKD.maGhe === ghe.maGhe
+        (gheKD) => gheKD.tenGhe === ghe.tenGhe
       );
       if (indexGheKD !== -1) {
         classGheKhachDat = "gheKhachDat";
       }
 
       if (indexGheDD != -1) {
-        classGheDaDat = "gheDangDat";
+        classGheDangDat = "gheDangDat";
       }
 
-      //người dùng đặt ghế sẽ hiện shadow
+      //ghe minh dat dat va thanh toan
       let classGheDaDuocDat = "";
       if (userLogin.taiKhoan === ghe.taiKhoanNguoiDat) {
         classGheDaDuocDat = "gheDaDuocDat";

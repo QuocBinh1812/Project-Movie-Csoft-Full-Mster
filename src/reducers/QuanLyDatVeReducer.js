@@ -9,10 +9,10 @@ import { ThongTinLichChieu } from "../_core/models/ThongTinPhongVe";
 const stateDefault = {
   chiTietPhongVe: new ThongTinLichChieu(),
   danhSachGheDangDat: [
-    // {maGhe: 47420, tenGhe: "20", maRap: 451, loaiGhe: "Thuong", stt: "20"}
+    //{ maGhe: 47420, tenGhe: "20", maRap: 451, loaiGhe: "Thuong", stt: "20" },
   ], //danh sách ghế đang đặt
   tabActive: "1",
-  danhSachGheKhachDat: [{ maGhe: 56847 }, { maGhe: 56848 }],
+  danhSachGheKhachDat: [{ tenGhe: "01" }, { tenGhe: "02" }],
 };
 
 export const QuanLyDatVeReducer = (state = stateDefault, action) => {

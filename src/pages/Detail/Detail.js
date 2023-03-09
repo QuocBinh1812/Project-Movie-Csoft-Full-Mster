@@ -19,6 +19,7 @@ export default function Detail(props) {
   useEffect(() => {
     //lấy thông tin param từ url
     let { id } = props.match.params;
+    console.log("id detailPage ", id);
     dispatch(layThongTinChiTietPhim(id));
   }, []);
   return (
@@ -35,7 +36,7 @@ export default function Detail(props) {
       <CustomCard
         style={{ minHeight: "100vh", padding: "200px" }}
         effectColor="#C780FF" // required
-        color="#000000" // default color is white
+        color="#00000" // default color is white
         blur={100} // default blur value is 10px
         borderRadius={"0px"} // default border radius value is 10px
       >

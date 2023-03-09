@@ -37,7 +37,7 @@ export const datVeAction = (thongTinDatVe = new ThongTinDatVe()) => {
       await dispatch({ type: DAT_VE_HOAN_TAT });
       await dispatch(hideLoadingAction);
       dispatch({ type: CHUYEN_TAB });
-      dispatch(hideLoadingAction);
+      //dispatch(hideLoadingAction);
     } catch (e) {
       console.log(e.response?.data);
       dispatch(hideLoadingAction);

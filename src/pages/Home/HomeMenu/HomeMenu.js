@@ -27,10 +27,11 @@ export default class HomeMenu extends PureComponent {
           }
           key={index}
         >
-          <Tabs tabPosition={tabPosition}>
+          <Tabs tabPosition={tabPosition} className="h-menu">
             {heThongRap.lstCumRap?.map((cumRap, index) => {
               return (
                 <TabPane
+                  className="h-menu overflow-y-auto"
                   tab={
                     <div
                       style={{
@@ -100,6 +101,7 @@ export default class HomeMenu extends PureComponent {
                             {phim.lstLichChieuTheoPhim
                               ?.slice(0, 8)
                               .map((lichChieu, index) => {
+                                
                                 return (
                                   <NavLink
                                     className="frame1"

@@ -45,6 +45,7 @@ export const HomeTemplate = (props) => {
     <Route
       {...restProps}
       render={(propsRoute) => {
+        console.log("propRouter", propsRoute);
         //props.location, props.history,props.match
         return (
           <Fragment>

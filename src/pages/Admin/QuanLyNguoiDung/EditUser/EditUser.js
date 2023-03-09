@@ -31,11 +31,11 @@ export default function EditUser(props) {
     initialValues: {
       taiKhoan: layTTNguoiDung?.taiKhoan,
       matKhau: layTTNguoiDung?.matKhau,
-      hoTen: layTTNguoiDung?.hoTen,
       email: layTTNguoiDung?.email,
       soDt: layTTNguoiDung?.soDt,
       maNhom: GROUPID,
       maLoaiNguoiDung: layTTNguoiDung?.maLoaiNguoiDung,
+      hoTen: layTTNguoiDung?.hoTen,
     },
     onSubmit: (values) => {
       console.log("values", values);

@@ -40,7 +40,7 @@ export class QuanLyNguoiDungService extends baseService {
     );
   };
   capNhatThongTinUser = (User) => {
-    return this.post(`/api/QuanLyNguoiDung/CapNhatThongTinNguoiDung`, User);
+    return this.put(`/api/QuanLyNguoiDung/CapNhatThongTinNguoiDung`, User);
   };
 }
 
