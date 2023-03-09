@@ -28,11 +28,6 @@ function Checkout(props) {
     const action = layChiTietPhongVeAction(props.match.params.id);
     //dispatch function này
     dispatch(action);
-
-    //load danh sách ghế đang đặt từ server về
-    //connection.on("loadDanhSachGheDaDat", (dsGheDangDat)=>{
-    //console.log('danhSachGheKhachDat',dsGheDangDat);
-    // })
   });
   const { thongTinPhim, danhSachGhe } = chiTietPhongVe;
   console.log("chi tiet phong ve ", chiTietPhongVe);
