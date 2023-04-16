@@ -85,7 +85,7 @@ const AddNew = () => {
         setImgSrc(e.target.result);
       };
 
-      // console.log('file',file);
+      console.log("file", file);
       //đếm dữ liệu file lưu vào formik
       formik.setFieldValue("hinhAnh", file);
     }
